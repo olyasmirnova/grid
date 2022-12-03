@@ -1,0 +1,45 @@
+.nav {
+    margin: 0 auto;
+    max-width: 1110px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0 0 0 40px;
+    &.active {
+        .nav-linK::after {
+            height: 2px;
+            transition: 0.2s ease-in-out all;
+        }
+    }
+}
+
+.nav-linK {
+    text-decoration: none;
+    color: $main-light-color;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "";
+        width: calc(100% + 44px);
+        left: -22px;
+        bottom: -40px;
+        height: 0;
+        transition: 0.2s ease-out all;
+        background: $main-light-color;
+    }
+    &:hover::after {
+        height: 2px;
+        transition: 0.2s ease-in-out all;
+    }
+}

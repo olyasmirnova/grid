@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    text-decoration: underline;
+    color: $color-primary;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        background-color: transparent;
+    }
+}
+
+form,
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    font: 100% $main-font;
+    outline: none;
+    vertical-align: middle;
+}
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

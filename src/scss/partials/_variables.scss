@@ -1,0 +1,33 @@
+$white: #fff;
+$grey: #999;
+$black: #000;
+$blue: #4985FF;
+$beige: #E5E5E5;
+$beige2: #F6F6F8;
+$dark-grey: #323232;
+$light-grey: #E0E0E0;
+$violet: #5F12D0; //sass scss
+$pink: #ff00f0;
+
+$font-montserrat: 'Montserrat', Arial, Helvetica, sans-serif;
+
+/*------------------*/
+
+$color-primary: $blue;
+$color-accent: $pink;
+$main-dark-color: $black;
+$main-light-color: $white;
+$dark-color: $dark-grey;
+$light-color: $beige;
+$neutral-light-color: $beige2;
+$neutral-color: $light-grey;
+$neutral-dark-color: $grey;
+$main-font: $font-montserrat;
+
+/*------------------*/
+
+$breakpoint-xxs: 320px;
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;

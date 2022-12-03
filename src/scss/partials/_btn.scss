@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 200px;
+    box-sizing: border-box;
+    background-color: $color-primary;
+    padding: 15px 20px;
+    font: 500 16px/20px $main-font;
+    border: none;
+    border-radius: 30px;
+    color: $main-light-color;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.2s ease-in-out all;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: -200px;
+        background-color: $color-accent;
+        position: absolute;
+        z-index: -1;
+        transition: all .35s ease-Out;
+        bottom: 0;
+    }
+    .ourworks &{
+        &::before{
+            background-color: $main-light-color;
+        }
+        &:hover{
+            color: $color-primary;
+        }
+    }
+    &:hover {
+        &::before {
+            left: 0;
+        }
+    }
+}
+.media-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: transparent;
+    border: 1px solid $neutral-color;
+    padding: 40px 30px 40px 120px;
+    font: 500 16px/20px $main-font;
+    color: $neutral-color;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    &:before{
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        content: '';
+        margin-top: -30px;
+        background-image: url(../img/play-button.svg);
+        width: 60px;
+        height: 60px;
+    }
+    &:hover{
+        transform: scale(1.1) translateX(-50%) translateY(-50%);
+    }
+}
